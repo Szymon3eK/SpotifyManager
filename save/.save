@@ -1,0 +1,11 @@
+app.on('ready', (req, res) => {
+  globalShortcut.register(`CommandOrControl+Alt+${options.serce}`, () => {
+    spotifyApi.skipToNext()
+    .then(function() {
+      console.log('Skip to next');
+    }, function(err) {
+      console.log('Something went wrong!', err);
+    });
+
+  })
+})

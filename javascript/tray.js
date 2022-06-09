@@ -34,8 +34,8 @@ app.whenReady().then(() => {
       label: 'Opcje',
       click() {
         const optionsWindow = new BrowserWindow({
-          width: 800,
-          height: 800,
+          width: 1000,
+          height: 1000,
           icon: __dirname + './images/SpotifyManagericon.ico',
           frame: false,
           webPreferences: {
@@ -50,6 +50,7 @@ app.whenReady().then(() => {
   ])
   tray.setToolTip('SpotifyManager!')
   tray.setContextMenu(contextMenu)
+
 })
 
 

@@ -1,3 +1,40 @@
-body {
-    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(214, 83, 214) 0%, rgb(243, 139, 238) 90% );
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+  
+  body {
+    background: #33CCCC;
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+  }
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+#center {
+    float: center;
+    font-size: 20px;
+    color:white;
+    font-family: Verdana, sans-serif;
+}
+
+P{
+    float: center;
+    font-size: 20px;
+    color:white;
+    font-family: Verdana, sans-serif;
+}
+
+input{
+    background-color: white;
+    border: 1px color black;
 }
